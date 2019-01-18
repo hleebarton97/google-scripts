@@ -1,7 +1,9 @@
 # My Google Doc Scripts
 
 ## code-font.js
-Looks for the target string (`` in this case) and any text wrapped in these characters and then changes the font and removes those characters.
+Looks for the target string (`` in this case) and 
+any text wrapped in these characters and then changes 
+the font and removes those characters.
 Inspired by Github's ``` code ``` format in the README.md files.
 I have a timer event set at every minute for this script.
 
@@ -18,6 +20,10 @@ function myFunction() {
 ```
 
 You may need to create a project and name it.
+
+Copy and paste the script into the function or 
+replace the function. You can rename it if you
+prefer.
 
 You then need to setup a trigger for the function by 
 clicking ```Edit > Current project's triggers```
