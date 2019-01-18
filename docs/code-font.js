@@ -1,9 +1,8 @@
 /**
- * Triggered every minute, this looks for
- * the target string (`` in this case) and
- * any text wrapped in these characters:
- * ``code stuffs`` and then changes the font
- * and removes those characters.
+ * Triggered every minute, this looks for the target 
+ * string (`` in this case) and any text wrapped in 
+ * these characters: ``code stuffs`` and then 
+ * changes the font and removes those characters.
  */
 function myFunction() {
     
