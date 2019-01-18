@@ -22,20 +22,20 @@ function myFunction() {
         
         if(search_result !== null && search_result_next !== null) {
         
-        // Get positions of the two target beginning characters.
-        var offset_start_start = search_result.getStartOffset();
-        var offset_start_end = search_result.getEndOffsetInclusive();
-        
-        // Get positions of the two target end characters.
-        var offset_end_start = search_result_next.getStartOffset();
-        var offset_end_end = search_result_next.getEndOffsetInclusive();
-        
-        // Set the code font
-        search_result.getElement().asText().setFontFamily(offset_start_start, offset_end_end, "Courier New");
-        
-        // Delete the target strings (delete end first, then start)
-        search_result.getElement().asText().deleteText(offset_end_start, offset_end_end);
-        search_result.getElement().asText().deleteText(offset_start_start, offset_start_end);
+            // Get positions of the two target beginning characters.
+            var offset_start_start = search_result.getStartOffset();
+            var offset_start_end = search_result.getEndOffsetInclusive();
+            
+            // Get positions of the two target end characters.
+            var offset_end_start = search_result_next.getStartOffset();
+            var offset_end_end = search_result_next.getEndOffsetInclusive();
+            
+            // Set the code font
+            search_result.getElement().asText().setFontFamily(offset_start_start, offset_end_end, "Courier New");
+            
+            // Delete the target strings (delete end first, then start)
+            search_result.getElement().asText().deleteText(offset_end_start, offset_end_end);
+            search_result.getElement().asText().deleteText(offset_start_start, offset_start_end);
         
         } else {
             done = true;
